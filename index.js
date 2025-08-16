@@ -57,9 +57,15 @@ function makesTheSentence(characterArray, sentenceString) {
   }
 }
 
-// 
-// 
+// <7 kyu> Sum of two lowest positive integers
+// Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+function sumTwoSmallestNumbers(numbers) {  
+  numbers.sort((a, b)=> a-b);
+  return numbers[0]+numbers[1];
+}
 
-
-// 
-// 
+// <8 kyu> Remove First and Last Character
+// Your goal is to write a function that removes the first and last characters of a string. You're given one parameter, the original string.
+function removeChar(str){
+  return str.slice(1, -1);
+};
